@@ -1,38 +1,61 @@
-.App {
-  text-align: center;
+body {
+  background-color: #f7f9fc;
+  font-family: 'Roboto', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1, p {
+  color: #343a40;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h1 {
+  font-weight: 700;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.lead {
+  font-size: 1.25rem;
+  color: #6c757d;
+}
+
+/* Styling the containers to look like cards */
+.card {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+/* Clock styles */
+.clock-container {
+  padding: 30px;
+  border: 3px solid #007bff;
+  border-radius: 50%;
+  font-size: 2rem;
+  color: #007bff;
+  display: inline-block;
+  background-color: #ffffff;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Custom Button Style */
+button {
+  background-color: #007bff;
   color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
 }
 
-.App-link {
-  color: #61dafb;
+button:hover {
+  background-color: #0056b3;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Container spacing */
+.container-fluid {
+  padding: 20px;
+}
+
+/* Card margins */
+.mb-4 {
+  margin-bottom: 2rem !important;
 }

@@ -1,0 +1,67 @@
+/* Styling for the analog clock */
+.clock {
+    width: 250px;
+    height: 250px;
+    border: 10px solid black;
+    border-radius: 50%;
+    position: relative;
+    margin: 0 auto;
+  }
+  
+  .hour, .minute, .second {
+    position: absolute;
+    width: 50%;
+    height: 6px;
+    background-color: black;
+    top: 48.5%;
+    left: 1.5%;
+    transform-origin: 100%;
+  }
+  
+  .second {
+    background-color: red;
+    height: 2px;
+  }
+  
+  .center {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: black;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  /* Digital clock styling */
+  .digital-clock {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .digital-clock h3 {
+    font-size: 2rem;
+    color: #343a40;
+  }
+  
+  .digital-clock p {
+    font-size: 1.2rem;
+    color: #6c757d;
+  }
+  
+  /* Responsive adjustments for clock size */
+  @media (max-width: 768px) {
+    .clock {
+      width: 200px;
+      height: 200px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .clock {
+      width: 150px;
+      height: 150px;
+    }
+  }
+  
